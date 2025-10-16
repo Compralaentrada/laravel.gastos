@@ -181,8 +181,8 @@ class Install extends Command
 
     private function createDatabaseTables()
     {
-        $this->db_host     = $this->option('ep-flat-king-a2h7eifn.aws-eu-central-1.pg.laravel.cloud');
-        $this->db_port     = $this->option('5432');
+        $this->db_host     = 'ep-flat-king-a2h7eifn.aws-eu-central-1.pg.laravel.cloud';
+        $this->db_port     = '5432';
         $this->db_name     = $this->option(self::OPT_DB_NAME);
         $this->db_username = $this->option(self::OPT_DB_USERNAME);
         $this->db_password = $this->option(self::OPT_DB_PASSWORD);
