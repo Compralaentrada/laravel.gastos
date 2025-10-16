@@ -186,7 +186,7 @@ class Install extends Command
         $this->db_name     = $this->option(self::OPT_DB_NAME);
         $this->db_username = $this->option(self::OPT_DB_USERNAME);
         $this->db_password = $this->option(self::OPT_DB_PASSWORD);
-        $this->db_prefix   = $this->option(self::OPT_DB_PREFIX);
+        $this->db_prefix   = 'ak_';
 
         $this->line('Connecting to database ' . $this->db_name . '@' . $this->db_host . ':' . $this->db_port);
 
