@@ -15,10 +15,10 @@ require('laravel-mix-tailwind');
 //mix.js('resources/assets/js/views/**/*.js', 'public/js')
 
 mix
-    .setPublicPath('public/')
+    .setPublicPath('public/public/')
     .webpackConfig({
         output: {
-            publicPath: 'public/js/',
+            publicPath: 'public/public/js/',
             filename: '[name].js',
             chunkFilename: '[name].js',
         },
@@ -72,7 +72,7 @@ mix
 
     .vue()
 
-    .postCss('resources/assets/sass/app.css', 'public/css', [
+    .postCss('resources/assets/sass/app.css', 'public/public/css', [
         require('tailwindcss')
     ])
     .tailwind('./tailwind.config.js')
